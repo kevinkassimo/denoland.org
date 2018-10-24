@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Denoland.org: What's New</title>
-</head>
-<body>
-  <div id="root" class="cover"></div>
-  <script type="text/babel">
-    class App extends React.Component {
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Denoland.org: What's New</title>
+  </head>
+  <body>
+    <div id="root" class="cover"></div>
+    <script type="text/babel">
+      class App extends React.Component {
       constructor(props) {
         super(props);
       }
@@ -24,13 +24,21 @@
             <img class="logo" src="./img/denoland.png" />
             <h1>Deno</h1>
             <h3>A secure TypeScript runtime built on V8</h3>
-            <p>Latest release: <a href="https://github.com/denoland/deno/releases">v0.1.8</a> / <a href="https://denoland.github.io/deno">Benchmarks</a></p>
+            <p>Latest release: <a href="https://github.com/denoland/deno/releases">v0.1.9</a> / <a href="https://denoland.github.io/deno">Benchmarks</a></p>
             <a href="https://github.com/denoland/deno"><img class="github-logo" src="./img/github.png"/></a>
           </div>);
       }
     }
 
     ReactDOM.render(<App />, document.getElementById('root'));
-  </script>
-</body>
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109679226-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109679226-3');
+    </script>
+  </body>
 </html>
