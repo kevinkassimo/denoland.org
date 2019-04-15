@@ -21,16 +21,16 @@
       render() {
         return (
           <div class="center">
-            <img class="logo" src="./img/denoland.png" />
+            <img class="logo" src="./img/deno_new.png" />
             <h1>Deno</h1>
             <h3>Secure TypeScript Server-side Runtime on V8</h3>
             <h4>Run the following in your terminal to install</h4>
             <div class="install-command">
               {navigator.platform.indexOf('Win') > -1 ?
-                "iex (iwr https://deno.land/x/install/install.ps1)" :
-                "curl -L https://deno.land/x/install/install.py | python"}
+                "iwr https://deno.land/x/install/install.ps1 | iex" :
+                "curl -fsSL https://deno.land/x/install/install.sh | sh"}
             </div>
-            <p>Latest release: <a href="https://github.com/denoland/deno/releases">v0.2.3</a> / <a href="https://deno.land/typedoc/">Docs</a> / <a href="https://deno.land/">Main Site</a></p>
+            <p>Latest release: <a href="https://github.com/denoland/deno/releases">v0.3.7</a> / <a href="https://deno.land/typedoc/">Docs</a> / <a href="https://deno.land/">Main Site</a></p>
             <a href="https://github.com/denoland/deno"><img class="github-logo" src="./img/github.png"/></a>
           </div>);
       }
